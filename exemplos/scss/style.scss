@@ -1,39 +1,26 @@
-$width: 100%;
-$font-size: 1.2rem;
-$background: #fff;
-$color: #000;
-$border-style: solid 1px $color;
-
-$width-rem: 3.5rem;
-$width-px: 300px;
-$width: 300;
-
-$font: "Lucida Grande";
-$weight: bold;
-
-$bg: red;
-$bg-color: rgb(110, 110, 100);
-$bg-section: rgba(0, 0, 0, 0.7);
-$font-color: #ffffff;
-
-body {
-  background: $bg-color;
-  color: $font-color;
+.msg {
+  border: 1px solid;
+  padding: 4px;
+  text-align: center;
 }
 
-nav {
-	background: $background;
-	color: $color;
-	width: $width;
-	font-size: $font-size;
+.msg-error {
+  @extend .msg;
+  border-color: #ff0000;
+  color: #ff0000;
 }
 
-aside {
-  width: $width-px;
+.msg-alert {
+  @extend .msg;
+  border-color: #ff80ff;
+  color: #ff80ff;
 }
 
-section {
-  font-family: $font;
-  font-weight: $weight;
-  background: $bg-section;
+a:hover {
+  text-decoration: underline;
+}
+
+.hoverlink {
+  @extend a:hover;
+  color: red;
 }

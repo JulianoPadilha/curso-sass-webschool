@@ -1,17 +1,18 @@
-body {
-  background: #6e6e64;
-  color: #ffffff; }
+.msg, .msg-error, .msg-alert {
+  border: 1px solid;
+  padding: 4px;
+  text-align: center; }
 
-nav {
-  background: #fff;
-  color: #000;
-  width: 300;
-  font-size: 1.2rem; }
+.msg-error {
+  border-color: #ff0000;
+  color: #ff0000; }
 
-aside {
-  width: 300px; }
+.msg-alert {
+  border-color: #ff80ff;
+  color: #ff80ff; }
 
-section {
-  font-family: "Lucida Grande";
-  font-weight: bold;
-  background: rgba(0, 0, 0, 0.7); }
+a:hover, .hoverlink {
+  text-decoration: underline; }
+
+.hoverlink {
+  color: red; }
