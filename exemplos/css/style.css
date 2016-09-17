@@ -1,2 +1,4 @@
-body {
-  background: #000; }
+a {
+  color: red; }
+  a:hover {
+    color: blue; }
