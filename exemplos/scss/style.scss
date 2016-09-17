@@ -1,7 +1,39 @@
-a {
-	color: red;
+$width: 100%;
+$font-size: 1.2rem;
+$background: #fff;
+$color: #000;
+$border-style: solid 1px $color;
 
-	&:hover {
-		color: blue;
-	}
+$width-rem: 3.5rem;
+$width-px: 300px;
+$width: 300;
+
+$font: "Lucida Grande";
+$weight: bold;
+
+$bg: red;
+$bg-color: rgb(110, 110, 100);
+$bg-section: rgba(0, 0, 0, 0.7);
+$font-color: #ffffff;
+
+body {
+  background: $bg-color;
+  color: $font-color;
+}
+
+nav {
+	background: $background;
+	color: $color;
+	width: $width;
+	font-size: $font-size;
+}
+
+aside {
+  width: $width-px;
+}
+
+section {
+  font-family: $font;
+  font-weight: $weight;
+  background: $bg-section;
 }

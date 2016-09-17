@@ -1,4 +1,17 @@
-a {
-  color: red; }
-  a:hover {
-    color: blue; }
+body {
+  background: #6e6e64;
+  color: #ffffff; }
+
+nav {
+  background: #fff;
+  color: #000;
+  width: 300;
+  font-size: 1.2rem; }
+
+aside {
+  width: 300px; }
+
+section {
+  font-family: "Lucida Grande";
+  font-weight: bold;
+  background: rgba(0, 0, 0, 0.7); }
