@@ -78,7 +78,7 @@ Para compilar uma pasta inteira utiliza-se:
 
 Os arquivos da pasta sass serão compilados e salvos na pasta css
 
-[](imagens/aula1-introducao.png)
+![](imagens/aula1-introducao.png)
 
 #### "Espiando" alterações
 
