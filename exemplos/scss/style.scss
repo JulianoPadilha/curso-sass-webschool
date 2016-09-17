@@ -1,26 +1,43 @@
-.msg {
-  border: 1px solid;
-  padding: 4px;
-  text-align: center;
+@mixin border-radius($radius){
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius; 
 }
 
-.msg-error {
-  @extend .msg;
-  border-color: #ff0000;
-  color: #ff0000;
+@mixin titulo($size, $color: blue){
+  color: $color;
+  font-size: $size;
 }
 
-.msg-alert {
-  @extend .msg;
-  border-color: #ff80ff;
-  color: #ff80ff;
+@mixin pad($values...){
+  padding: $values;
 }
 
-a:hover {
-  text-decoration: underline;
+.box {
+  @include border-radius(10px);
 }
 
-.hoverlink {
-  @extend a:hover;
-  color: red;
+h1 {
+  @include titulo(20px);
+}
+
+h2 {
+  @include titulo(20px, #333);
+}
+
+p {
+  @include pad(10px);
+}
+
+p {
+  @include pad(10px 20px);
+}
+
+p {
+  @include pad(10px 20px 10px);
+}
+
+p {
+  @include pad(10px 20px 10px 20px);
 }
